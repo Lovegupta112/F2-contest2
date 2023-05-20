@@ -102,6 +102,22 @@ form .inputs section {
   border: 1px solid #ffffff;
   border-radius: 3px;
 }
+
+.inputs section #profession-input{
+  width: 100%;
+  line-height: 2.5;
+  background: none;
+  color: #ffffff;
+  margin-top: 10px;
+  border: 1px solid #ffffff;
+  border-radius: 3px;
+  padding: 0.6rem;
+}
+
+#profession-input option {
+  color: #ffffff;
+  background-color: #000000;
+}
 .add-user #add {
   padding: 0.2rem;
   line-height: 2;

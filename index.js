@@ -55,21 +55,26 @@ function filter() {
 
 }
 
-// add user method-------------------->
+// add user method----------------------------->
 
 function addUser() {
     let input = document.getElementsByTagName('input');
-    // console.log(input);
+    let professionInputIndex=parseInt(document.getElementById('profession-input').selectedIndex);
+    let option=document.querySelectorAll('#profession-input option');
+    // console.log(option);
+    let optionValue=option[professionInputIndex].value;
+    // console.log(optionValue);
+
 
     // we will also check that  we dont have to push object of empty  input values in array --
     // like newUser={id:4 , name="",age:"",profession=""}; 
 
-    if (input[0].value.length && input[1].value.length && input[2].value.length) {
+    if (input[0].value.length && input[1].value.length && professionInputIndex!==0) {
 
         let newUser = { id: userId++, name: "", age: "", profession: "" };
         newUser.name = input[0].value;
-        newUser.profession = input[1].value;
-        newUser.age = input[2].value;
+        newUser.age = input[1].value;
+        newUser.profession = optionValue;
 
         userArr.push(newUser);
         filterDiv[0].innerHTML = "";
@@ -81,5 +86,4 @@ function addUser() {
 
     input[0].value = "";
     input[1].value = "";
-    input[2].value = "";
 }
