@@ -36,10 +36,25 @@ body {
   background-color: #000000;
 }
 
+
+.profession-section .filter-ui {
+  max-height: 223px;
+  overflow-y: auto;
+  min-height: 180px;
+  width: 50%;
+  padding: 0.4rem;
+}
+
+::-webkit-scrollbar{
+  width:4px;
+  background: rgba(255, 255, 255, 0.515);
+}
+
+
 .profession-section .filter-ui .cards {
   border: 1px solid #ffffff;
   border-radius: 7px;
-  width: 50%;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   margin: 0.8rem 0;
@@ -59,6 +74,9 @@ body {
   font-size: 1rem;
 }
 
+#filter:hover{
+  cursor: pointer;
+}
 /* add-user section -----------*/
 .add-user {
   margin-top: 3rem;
@@ -93,13 +111,17 @@ form .inputs section {
   background-color: #ffffff;
 }
 
+#add:hover{
+  cursor: pointer;
+}
+
 @media screen and (max-width: 870px) {
-  .profession-section .filter-ui .cards {
+  .profession-section .filter-ui  {
     width: 60%;
   }
 }
 @media screen and (max-width: 800px) {
-  .profession-section .filter-ui .cards {
+  .profession-section .filter-ui  {
     width: 80%;
   }
 }
@@ -107,7 +129,7 @@ form .inputs section {
   body {
     font-size: 0.7rem;
   }
-  .profession-section .filter-ui .cards {
+  .profession-section .filter-ui  {
     width: 100%;
   }
 }

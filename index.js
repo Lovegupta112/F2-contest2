@@ -32,7 +32,7 @@ window.addEventListener('load', () => {
 })
 
 
-// filter method-----------------
+// filter method----------------->
 function filter() {
 
     let professionIndex = document.getElementById('profession').selectedIndex;
@@ -55,7 +55,7 @@ function filter() {
 
 }
 
-// add user method--------------------
+// add user method-------------------->
 
 function addUser() {
     let input = document.getElementsByTagName('input');
